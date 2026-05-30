@@ -1,0 +1,13 @@
+# Lightweight dev dependencies (no GPU/psycopg2 needed for local SQLite dev)
+fastapi>=0.115
+uvicorn[standard]
+sqlalchemy>=2.0
+alembic
+pydantic>=2.10
+python-dotenv
+slowapi
+httpx
+
+# Install these separately when you want full ML inference:
+# pip install torch transformers scikit-learn
+# pip install psycopg2-binary   (only needed for PostgreSQL)
